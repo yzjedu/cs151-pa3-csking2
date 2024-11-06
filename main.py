@@ -1,12 +1,21 @@
+# # Programmers: Cody
+# # Course: CS151, Professor Zee
+# # Due Date: November 7th 2024
+# # Lab Assignment: PA3
+# # Problem Statement: Write a program that displays ASCII art based on user input
+# # Credits: Found the picture of the airplane for random online, wrote the code myself,
+# # the rest I used the zybooks to help me with understanding it more
 
 
 
 
-
-
+#initialize variables
 choice = ""
 cnumber = 0
 
+#Name: user_choice
+#Parameters: None
+#Return: choice
 def user_choice():
     global choice
     print('\nPurpose: Select one of the following options to create ASCII Art.')
@@ -32,6 +41,10 @@ def user_choice():
 
     return choice
 
+
+#Name: circle
+#Parameters: None
+#Return: None
 def circle():
     print("    ****   ")
     print(" *       * ")
@@ -41,6 +54,10 @@ def circle():
     print(" *       * ")
     print("    ****    ")
 
+
+#Name: lines
+#Parameters: None
+#Return: None
 def lines():
     num_lines = input('Enter number of lines: ')
     character = input('Enter a character/set of characters you with to be printed: ')
@@ -54,7 +71,9 @@ def lines():
 
 
 
-
+#Name: Random
+#Parameters: None
+#Return: None
 def random():
     import random
     global cnumber
@@ -73,4 +92,5 @@ def random():
         print('       __|__')
         print('--0' * 2 + '--'+'(_)'+ '--0' * 2 + '--')
 
+#Call main function
 user_choice()
